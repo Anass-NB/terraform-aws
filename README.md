@@ -1,6 +1,10 @@
 # IaC using terraform in AWS
-### Super basic Example
 
-This code creates a EC2 instance `"ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*` of ` t2.micro` type
+## Storage 
+the storage module servs to create s3 buckets , the name of buckets is given in the main.tf in root directory  
 
-![Created insance](image.png)
+## Identity and Access Management 
+
+
+
+
