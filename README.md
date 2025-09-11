@@ -9,3 +9,6 @@ the iam module servs to create an iam user and an iam group , the name of the us
 
 ## Elastic Container Registry
 the ecr module servs to create an ecr repository , the name of the repository is given in the ecr_config.yaml file in the ecr module directory
+
+
+###   --- IGNORE ---
