@@ -1,0 +1,6 @@
+ecr_name: "terraform-ecr-repo-test"
+ecr_tag_mutability: "MUTABLE"
+ecr_scan_on_push: true
+tags:
+  Environment: "dev"
+  Project: "flask-app"
