@@ -1,3 +1,8 @@
+locals {
+  redshift_config = yamldecode(file("redshift_config.yaml"))
+}
+
+
 
 module "storage" {
   source        = "./modules/storage"
@@ -13,4 +18,8 @@ module "storage" {
 module "ecr" {
   source = "./modules/ecr"
 
+}
+module "redshift" {
+  source          = "./modules/redshift"
+  redshift_config = local.redshift_config
 }

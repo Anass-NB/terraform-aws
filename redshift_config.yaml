@@ -1,0 +1,35 @@
+namespace:
+  name: "namespace1"
+  db_name: "db"
+  admin_username: "user"
+  admin_user_password: "user1234"
+
+workgroup: 
+  name: "workgroup1"
+  base_capacity: 32
+  publicly_accessible: false 
+
+network:
+  vpc:
+    name: "my-vpc"
+    cidr: "10.0.0.0/16"
+    availability_zones: 
+      - "eu-west-3a"
+      - "eu-west-3b"
+      - "eu-west-3c"
+  subnets:
+    private_subnets_cidrs:
+      - "10.0.1.0/24"
+      - "10.0.2.0/24"
+      - "10.0.3.0/24"
+    public_subnets_cidrs: 
+      - "10.0.101.0/24"
+      - "10.0.102.0/24"
+      - "10.0.103.0/24"
+  security_groups:
+    name: "redshift-sg"
+    description: "Redshift security group"
+    ingress_cidr_blocks: ["10.0.0.0/16"]
+
+
+iam_roles:
