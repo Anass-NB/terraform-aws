@@ -17,3 +17,7 @@ override.tf.json
 # Variable files with secrets (if any)
 *.tfvars
 *.tfvars.json
+
+modules/**/ec2-config.yaml
+modules/ec2/terraform.tfstate
+modules/ec2/terraform.tfstate.backup

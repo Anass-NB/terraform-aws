@@ -12,4 +12,7 @@ the ecr module servs to create an ecr repository , the name of the repository is
 
 
 ### Redshift Serverless
-the redshift module servs to create a redshift serverless environment , the name of the namespace , workgroup and network configuration is given in the `predshift_config.yaml` file in the redshift module directory 
+the redshift module servs to create a redshift serverless environment , the name of the namespace , workgroup and network configuration is given in the `redshift_config.yaml` file in the redshift module directory 
+
+### EC2 Instance
+the ec2 module servs to create an ec2 instance , the configuration of the instance is given in the `ec2_config.yaml` file in the ec2 module directory.

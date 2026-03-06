@@ -1,0 +1,14 @@
+name: "web-server"
+ami: "ami-0bb979b1e8aea0100" # Amazon Linux 2 (us-east-1)
+instance_type: "t4g.micro"
+key_name: "web-instance-keypair"
+subnet_id: "default"
+associate_public_ip: true
+root_volume:
+  size: 8
+  type: "gp3"
+  encrypted: true
+security_group_ids:
+- "sg-000000000000"
+tags:
+  Environment: "production"
