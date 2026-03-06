@@ -1,0 +1,22 @@
+- name: "odoo-server"
+  ami: "ami-0c55b159cbfafe1f0" # Amazon Linux 2 (us-east-1)
+  instance_type: "t3.medium"
+  key_name: "my-keypair"
+  subnet_id: "subnet-xxxxxxxx"
+  associate_public_ip: true
+  root_volume:
+    size: 30
+    type: "gp3"
+    encrypted: true
+  extra_volumes:
+  - device_name: "/dev/sdb"
+    size: 50
+    type: "gp3"
+    encrypted: true
+  security_group_ids:
+  - "sg-xxxxxxxx"
+  iam_instance_profile: "web-server-profile"
+  tags:
+    Environment: "production"
+    Team: "platform"
+    Role: "web"
